@@ -37,13 +37,17 @@
     </script>
   </head>
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body onload="startRound()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
 
 <div class="jumbotron masthead">
   <div class="container">
-    <h2><u>Team 2</u></h2>
-    <p style="font-size:120%;">Round 1</p>
+    <h2 id="header"><u><!--title gets inserted here--></u></h2>
+
+    <p id="round" style="font-size:120%;">
+    
+    </p>
+
     <div style="text-align:center">    
       <button align="center" style="height:150% align:center;">CONTINUE</button>
     </div>  

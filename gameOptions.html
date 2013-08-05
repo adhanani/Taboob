@@ -37,39 +37,61 @@
     </script>
   </head>
 
-  <body onload="timeUp()" data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body onload="gameOptions()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
 
 <div class="jumbotron masthead">
   <div class="container">
-    <h2><u>Time's Up!</u></h2>
-
-    <p style="font-size:120%;">
-      Team 1 earned 5 points.
-    </p>
-
+    <h1 size="10em"><u>Game Options</u></h1>
       <table align="center" id="menutable">
         <tr>
           <td>
-            <p><u>Team1</u></p>
+            Number of Rounds
           </td>
           <td>
-            <p><u>Team2</u></p>
+            <select id="Rounds" class="selectpicker" style="width:200px;">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
           </td>
         </tr>
         </br>
         <tr>
           <td>
-            <p style="font-size:120%;">6 points</p>
+            Number of Bonus Rounds
           </td>
           <td>
-            <p style="font-size:120%;">0 points</p>
+            <select id="BonRounds" class="selectpicker" style="width:200px;">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
           </td>
         </tr>
         </br>
+        <tr>
+          <td>
+            Time Limit Per Set
+          </td>
+          <td>
+            <select id="time" class="selectpicker" style="width:200px;">
+              <option value="1">1 minute</option>
+              <option value="2">2 minutes</option>
+              <option value="3">3 minutes</option>
+            </select>
+          </td>
+        </tr>
         <tr>
           <td colspan="2;">
-            <button style="height:150%;">CONTINUE</button>
+            <button id="startGame" style="height:150%;">START</button>
           </td>
         </tr>
       </table>

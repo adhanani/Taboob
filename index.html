@@ -37,17 +37,21 @@
     </script>
   </head>
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
+  <body onload="index()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
 <div class="jumbotron masthead">
   <div class="container">
+    
     <h1><u>Tabooze</u></h1>
-    <p>The Drinking Game.</p>
-      <table align="center" id="menutable">
+
+    <p>
+      The Drinking Game.
+    </p>
+      
+      <table align="center" id="menuTable">
         <tr>
           <td>
-            <input type="text;">
+            <input id="1" placeholder="Team 1" type="text;">
           </td>
           <td>
             <button class="team">-</button>
@@ -56,7 +60,7 @@
         </br>
         <tr>
           <td>
-            <input type="text;">
+            <input id="2" placeholder="Team 2" type="text;">
           </td>
           <td>
             <button class="team">-</button>
@@ -70,11 +74,12 @@
         </tr>
         <tr>
           <td colspan="2;">
-            <button style="height:150%;">START</button>
+            <button id="start" style="height:150%;">START</button>
           </td>
         </tr>
       </table>
     <button style="float:left" id="help;">?</button>
+
   </div>
 </div>
 
@@ -84,7 +89,6 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/ready.js"></script>
     <script src="assets/js/bootstrap-alert.js"></script>

@@ -6165,3 +6165,14 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+/*!
+ SEAN SCOFIELD
+ */
+
+/* vertically aligns table row data to middle */
+td
+{
+height:50px;
+vertical-align:middle;
+}

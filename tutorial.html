@@ -37,46 +37,67 @@
     </script>
   </head>
 
-  <body onload="timeUp()" data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
 
 
-<div class="jumbotron masthead">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap In Action - Landing Page Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+
+  body {
+      padding-top: 20px;
+  }
+
+  .margin-base-vertical {
+      margin: 40px 0;
+  }
+
+  </style>
+
+</head>
+<body>
+
   <div class="container">
-    <h2><u>Time's Up!</u></h2>
+      <div class="row">
+          <div class="col-lg-6 col-offset-3">
 
-    <p style="font-size:120%;">
-      Team 1 earned 5 points.
-    </p>
+              <h1 class="margin-base-vertical">Have you ever seen the rain?</h1>
 
-      <table align="center" id="menutable">
-        <tr>
-          <td>
-            <p><u>Team1</u></p>
-          </td>
-          <td>
-            <p><u>Team2</u></p>
-          </td>
-        </tr>
-        </br>
-        <tr>
-          <td>
-            <p style="font-size:120%;">6 points</p>
-          </td>
-          <td>
-            <p style="font-size:120%;">0 points</p>
-          </td>
-        </tr>
-        </br>
-        <tr>
-          <td colspan="2;">
-            <button style="height:150%;">CONTINUE</button>
-          </td>
-        </tr>
-      </table>
-    <button style="float:left" id="help;">?</button>
+              <p>
+                  Someone told me long ago there's a calm before the storm. I know, It's been comin for some time.
+              </p>
+              <p>
+                  When it's over, so they say, it'll rain a sunny day. I know,    Shinin down like water.
+              </p>
+
+              <p>
+                  I want to know, have you ever seen the rain?
+              </p>
+
+              <form action="/mailing-list" method="post" class="margin-base-vertical">
+                  <p class="input-group">
+                      <span class="input-group-addon">@</span>
+                      <input type="text" class="form-control input-large" name="email" placeholder="jonsnow@knowsnothi.ng" />
+                  </p>
+                  <p class="help-block text-center"><small>We won't send you spam. Unsubscribe at any time.</small></p>
+                  <p class="text-center">
+                      <button type="submit" class="btn btn-success btn-large">Keep me posted</button>
+                  </p>
+                  </span>
+              </form>
+
+          </div>
+      </div>
   </div>
-</div>
 
+</body>
+</html>
 
 
 
