@@ -40,40 +40,39 @@
   <body onload="timeUp()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
 
-<div class="jumbotron masthead">
-  <div class="container">
+  <div class="container" style="text-align:center;">
     <h2><u>Time's Up!</u></h2>
 
-    <p style="font-size:120%;">
-      Team 1 earned 5 points.
+    <p id="title" style="font-size:120%;">
+      <!--Team (blank) earned (blank) points-->
     </p>
 
-      <table align="center" id="menutable">
-        <tr>
+      <table cellpadding="10" align="center" id="teamTable">
+        <tr id="teamNames">
           <td>
-            <p><u>Team1</u></p>
+            <p><u>Team 1</u></p>
           </td>
           <td>
-            <p><u>Team2</u></p>
+            <p><u>Team 2</u></p>
+          </td>
+        </tr>
+        </br>
+        <tr id="teamScores">
+          <td>
+            <p id="1" style="font-size:100%;"><!--Team 1 score--></p>
+          </td>
+          <td>
+            <p id="2" style="font-size:100%;"><!--Team 2 score--></p>
           </td>
         </tr>
         </br>
         <tr>
-          <td>
-            <p style="font-size:120%;">6 points</p>
-          </td>
-          <td>
-            <p style="font-size:120%;">0 points</p>
-          </td>
-        </tr>
-        </br>
-        <tr>
-          <td colspan="2;">
-            <button style="height:150%;">CONTINUE</button>
+          <td id="continueRow" colspan="2;">
+            <button id="continue" type="submit" class="btn btn-success btn-small" style="height:150%;">CONTINUE</button>
           </td>
         </tr>
       </table>
-    <button style="float:left" id="help;">?</button>
+    <button type="submit" class="btn btn-success btn-small" style="float:left" id="help">?</button>
   </div>
 </div>
 

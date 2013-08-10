@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap</title>
+    <title>Gameplay</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,51 +37,34 @@
     </script>
   </head>
 
-  <body onload="index()" data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body onload="gameplay()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
-<div class="container">
-  
-  <h1 align="center"><u>Tabooze</u></h1>
-
-  <p align="center">
-    The Drinking Game.
-  </p>
-    
-    <table align="center" id="menuTable">
-      <tr>
-        <td>
-          <input id="1" placeholder="Team 1" type="text;">
-        </td>
-        <td>
-          <button type="submit" class="btn btn-success btn-small" id="team1">-</button>
-        </td>
-      </tr>
+  <div class="container" style="text-align:center;">
+      <div id = "gamebox" align = "center">
+        <h2 id = "mainword"><!--Current Word--></h2>
+          <ul style="list-style-type: none; margin:auto;" id = "buzzword_box">
+            <li class = "buzzword"><!--First Buzzword--></li>
+            <li class = "buzzword"><!--First Buzzword--></li>
+            <li class = "buzzword"><!--First Buzzword--></li>
+            <li class = "buzzword"><!--First Buzzword--></li>
+            <li class = "buzzword"><!--First Buzzword--></li>
+          </ul>
+      </div>
       </br>
-      <tr>
-        <td>
-          <input id="2" placeholder="Team 2" type="text;">
-        </td>
-        <td>
-          <button type="submit" class="btn btn-success btn-small" id="team2">-</button>
-        </td>
-      </tr>
+      <button id="tabooze" type="submit" class="circlebutton btn btn-success btn-small">TABOOZE</button>
       </br>
-      <tr>
-        <td align="center" colspan="2;">
-          <button type="submit" class="btn btn-success btn-small" id="add">+</button>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" colspan="2;">
-          <button type="submit" class="btn btn-success btn-large" id="start" style="height:150%;">  
-            START
-          </button>
-        </td>
-      </tr>
-    </table>
-  <button type="submit" class="btn btn-success btn-small" style="float:left" id="help;">?</button>
+      <div id = "correct">
+        <button id="correct" type="submit" class="circlebutton btn btn-success btn-small">CORRECT</button>      
+      </div>
+      
+      <p id="timer"></p>
+      
+      <div id="progress" class="progress progress-danger progress-striped active" style="margin:auto; width:15em;">
+        <div id="progressBar" class="bar" style="width: 100%;"></div>
+      </div>
 
-</div>
+  </div>
+
 
 
 
@@ -89,6 +72,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/ready.js"></script>
     <script src="assets/js/data.json"></script>

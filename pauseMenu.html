@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap</title>
+    <title>Pause Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,51 +37,21 @@
     </script>
   </head>
 
-  <body onload="index()" data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body onload="pauseMenu()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
-<div class="container">
-  
-  <h1 align="center"><u>Tabooze</u></h1>
-
-  <p align="center">
-    The Drinking Game.
-  </p>
+  <div class="container" style="text-align:center;">
     
-    <table align="center" id="menuTable">
-      <tr>
-        <td>
-          <input id="1" placeholder="Team 1" type="text;">
-        </td>
-        <td>
-          <button type="submit" class="btn btn-success btn-small" id="team1">-</button>
-        </td>
-      </tr>
-      </br>
-      <tr>
-        <td>
-          <input id="2" placeholder="Team 2" type="text;">
-        </td>
-        <td>
-          <button type="submit" class="btn btn-success btn-small" id="team2">-</button>
-        </td>
-      </tr>
-      </br>
-      <tr>
-        <td align="center" colspan="2;">
-          <button type="submit" class="btn btn-success btn-small" id="add">+</button>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" colspan="2;">
-          <button type="submit" class="btn btn-success btn-large" id="start" style="height:150%;">  
-            START
-          </button>
-        </td>
-      </tr>
-    </table>
-  <button type="submit" class="btn btn-success btn-small" style="float:left" id="help;">?</button>
+    <h1><u>Boobat</u></h1>
+    
+    <p>The Dirty Guessing Game.</p>
+    
+    <button type="submit" class="circlebutton btn-small btn btn-success">RESUME</button>
+    </br>
+    </br>
+    <button id="mainMenu" type="submit" class="circlebutton btn-small btn btn-success">MAIN MENU</button>
 
-</div>
+  </div>
+
 
 
 
@@ -89,9 +59,9 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/ready.js"></script>
-    <script src="assets/js/data.json"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
     <script src="assets/js/bootstrap-modal.js"></script>
     <script src="assets/js/bootstrap-dropdown.js"></script>
