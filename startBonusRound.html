@@ -41,7 +41,7 @@
     </script>
 </head>
 
-<body onload="bonusRound()" data-spy="scroll" data-target=".bs-docs-sidebar">
+<body onload="index()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -68,26 +68,60 @@
     </div>
     <!-- /.navbar -->
 
-    <div class="container" style="text-align:center;">
-        <h2><u>Bonus Round</u>
-        </h2>
+    <div class="container">
 
-        <p id="p" style="font-size:100%;">
+        <h1 align="center"><u>Tabooze</u>
+        </h1>
+
+        <p align="center">
+            The Drinking Game.
         </p>
 
-        <button type="submit" class="btn btn-success btn-small btn-purple" style="float:center" id="startbonus">START</button>
-        <p id="timer" style="font-size:100%;">1:00</p>
+        <table align="center" id="menuTable">
+            <tr>
+                <td>
+                    <input id="1" placeholder="Team 1" type="text;">
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-success btn-small" id="team1">-</button>
+                </td>
+            </tr>
+            </br>
+            <tr>
+                <td>
+                    <input id="2" placeholder="Team 2" type="text;">
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-success btn-small" id="team2">-</button>
+                </td>
+            </tr>
+            </br>
+            <tr>
+                <td align="center" colspan="2;">
+                    <button type="submit" class="btn btn-success btn-small" id="add">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2;">
+                    <button type="submit" class="btn btn-success btn-large" id="start" style="height:150%;">
+                        START
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" class="btn btn-success btn-small btn-pink" style="float:left" id="help;">?</button>
+
     </div>
-    </div>
+
 
 
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/ready.js"></script>
+    <script src="assets/js/data.json"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
     <script src="assets/js/bootstrap-modal.js"></script>
     <script src="assets/js/bootstrap-dropdown.js"></script>

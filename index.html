@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,67 +22,88 @@
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-146052-10']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-146052-10']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-  </head>
+</head>
 
-  <body onload="index()" data-spy="scroll" data-target=".bs-docs-sidebar">
+<body onload="index()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
-<div class="container">
-  
-  <h1 align="center"><u>Tabooze</u></h1>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">TABOOZE: The Dirty Drinking Game</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#" id="home"><i class="icon-home icon-white"></i> Main Menu</a>
+                        </li>
+                        <li><a href="#" id="tutorial"><i class="icon-book icon-white"></i> Tutorial</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar-inner -->
+    </div>
+    <!-- /.navbar -->
 
-  <p align="center">
-    The Drinking Game.
-  </p>
-    
-    <table align="center" id="menuTable">
-      <tr>
-        <td>
-          <input id="1" placeholder="Team 1" type="text;">
-        </td>
-        <td>
-          <button type="submit" class="btn btn-success btn-small" id="team1">-</button>
-        </td>
-      </tr>
-      </br>
-      <tr>
-        <td>
-          <input id="2" placeholder="Team 2" type="text;">
-        </td>
-        <td>
-          <button type="submit" class="btn btn-success btn-small" id="team2">-</button>
-        </td>
-      </tr>
-      </br>
-      <tr>
-        <td align="center" colspan="2;">
-          <button type="submit" class="btn btn-success btn-small" id="add">+</button>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" colspan="2;">
-          <button type="submit" class="btn btn-success btn-large" id="start" style="height:150%;">  
-            START
-          </button>
-        </td>
-      </tr>
-    </table>
-  <button type="submit" class="btn btn-success btn-small" style="float:left" id="help;">?</button>
+    <div class="container">
 
-</div>
+        <table align="center" id="menuTable">
+            <tr>
+                <td>
+                    <input id="1" placeholder="Team 1" type="text;">
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-success btn-small btn-pink" id="team1">-</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="2" placeholder="Team 2" type="text;">
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-success btn-small btn-pink" id="team2">-</button>
+                </td>
+            </tr>
+            </br>
+            <tr>
+                <td align="center" colspan="2;">
+                    <button type="submit" class="btn btn-success btn-small btn-pink" id="add">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2;">
+                    <button type="submit" class="btn btn-purple btn-circle" id="start" style="height:110px; width:110px;">
+                        START
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
 
 
 
@@ -114,5 +136,6 @@
     <!-- Javascript
     ================================================== -->
 
-  </body>
+</body>
+
 </html>

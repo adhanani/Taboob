@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,37 +22,65 @@
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-146052-10']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-146052-10']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-  </head>
+</head>
 
-  <body onload="startRound()" data-spy="scroll" data-target=".bs-docs-sidebar">
+<body onload="startRound()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">TABOOZE: The Dirty Drinking Game</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#" id="home"><i class="icon-home icon-white"></i> Home</a>
+                        </li>
+                        <li><a href="#" id="tutorial">Tutorial</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar-inner -->
+    </div>
+    <!-- /.navbar -->
 
-  <div class="container" style="text-align:center;">
-    <h2 id="header"><u><!--title gets inserted here--></u></h2>
+    <div class="container" style="text-align:center;">
+        <h2 id="header"><u><!--title gets inserted here--></u>
+        </h2>
 
-    <p id="round" style="font-size:120%;">
-    
-    </p>
+        <p id="round" style="font-size:120%;">
 
-    <div style="text-align:center">    
-      <button id="continue" type="submit" class="btn btn-success btn-small" align="center" style="height:150% align:center;">CONTINUE</button>
-    </div>  
-    <button type="submit" class="btn btn-success btn-small" style="float:left" id="help;">?</button>
-  </div>
+        </p>
+
+        <div style="text-align:center">
+            <button id="continue" type="submit" class="btn btn-purple btn-circle" align="center"
+                style="height:110px; width:110px;">CONTINUE</button>
+        </div>
+    </div>
 
 
 
@@ -84,5 +113,6 @@
     <!-- Javascript
     ================================================== -->
 
-  </body>
+</body>
+
 </html>

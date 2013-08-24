@@ -41,7 +41,7 @@
     </script>
 </head>
 
-<body onload="bonusRound()" data-spy="scroll" data-target=".bs-docs-sidebar">
+<body onload="bonusOver()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -69,16 +69,14 @@
     <!-- /.navbar -->
 
     <div class="container" style="text-align:center;">
-        <h2><u>Bonus Round</u>
+        <h2><u>Time's Up!</u>
         </h2>
 
-        <p id="p" style="font-size:100%;">
-        </p>
+        <p id='p'></p>
+        <button type="submit" class="btn btn-purple btn-circle" style="height:110px; width:110px;" id="continue">Continue</button>
+    </div>
+    </div>
 
-        <button type="submit" class="btn btn-success btn-small btn-purple" style="float:center" id="startbonus">START</button>
-        <p id="timer" style="font-size:100%;">1:00</p>
-    </div>
-    </div>
 
 
 

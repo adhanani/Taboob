@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Bootstrap</title>
+    <title>Tutorial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -21,83 +22,55 @@
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-146052-10']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-146052-10']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap In Action - Landing Page Example</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap -->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" />
-
-  <style>
-
-  body {
-      padding-top: 20px;
-  }
-
-  .margin-base-vertical {
-      margin: 40px 0;
-  }
-
-  </style>
-
 </head>
-<body>
 
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-6 col-offset-3">
+<body onload="tutorial()" data-spy="scroll" data-target=".bs-docs-sidebar">
 
-              <h1 class="margin-base-vertical">Have you ever seen the rain?</h1>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">TABOOZE: The Dirty Drinking Game</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#" id="home"><i class="icon-home icon-white"></i> Home</a>
+                        </li>
+                        <li><a href="#" id="tutorial">Tutorial</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar-inner -->
+    </div>
+    <!-- /.navbar -->
 
-              <p>
-                  Someone told me long ago there's a calm before the storm. I know, It's been comin for some time.
-              </p>
-              <p>
-                  When it's over, so they say, it'll rain a sunny day. I know,    Shinin down like water.
-              </p>
+    <h2 align="center">Tutorial. I still need to do this</h2>
 
-              <p>
-                  I want to know, have you ever seen the rain?
-              </p>
 
-              <form action="/mailing-list" method="post" class="margin-base-vertical">
-                  <p class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control input-large" name="email" placeholder="jonsnow@knowsnothi.ng" />
-                  </p>
-                  <p class="help-block text-center"><small>We won't send you spam. Unsubscribe at any time.</small></p>
-                  <p class="text-center">
-                      <button type="submit" class="btn btn-success btn-large">Keep me posted</button>
-                  </p>
-                  </span>
-              </form>
-
-          </div>
-      </div>
-  </div>
-
-</body>
-</html>
 
 
 
@@ -107,6 +80,7 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/ready.js"></script>
+    <script src="assets/js/data.json"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
     <script src="assets/js/bootstrap-modal.js"></script>
     <script src="assets/js/bootstrap-dropdown.js"></script>
@@ -129,5 +103,6 @@
     <!-- Javascript
     ================================================== -->
 
-  </body>
+</body>
+
 </html>

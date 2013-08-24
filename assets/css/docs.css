@@ -870,10 +870,12 @@ form.bs-docs-example {
 @media (max-width: 980px) {
   /* Unfloat brand */
   body > .navbar-fixed-top .brand {
+    /* SEAN SCOFIELD */
     float: left;
-    margin-left: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align:center;
+    color:white;
+    font-size:100%;
+    /* end of edit */
   }
 
   /* Inline-block quick links for more spacing */
